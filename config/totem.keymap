@@ -30,36 +30,29 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
+    combos { compatible = "zmk,combos"; };
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+    behaviors {
+        hrm_L: hrm_L {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <10 11 12 13>;
+            tapping-term-ms = <200>;
         };
 
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 4>;
-        };
-    };
+        hrm_R: hrm_R {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_R";
+            bindings = <&kp>, <&kp>;
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <16 17 19 18>;
         };
     };
 
@@ -85,10 +78,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q       &kp W       &kp F        &kp P        &kp B                   &kp J    &kp L        &kp U        &kp Y       &kp SEMI
-              &mt LGUI A  &mt LALT R  &mt LSHFT S  &mt LCTRL T  &kp G                   &kp M    &mt RCTRL N  &mt RSHFT E  &mt RALT I  &mt RGUI O
-&lt 3 ESCAPE  &kp Z       &kp X       &kp C        &kp D        &kp V                   &kp K    &kp H        &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
-                                      &kp DEL      &lt 1 TAB    &mt LEFT_SHIFT SPACE    &kp RET  &lt 2 ESC    &kp BSPC
+              &kp Q          &kp W          &kp F           &kp P           &kp B                   &kp J    &kp L           &kp U           &kp Y          &kp SEMI
+              &hrm_L LGUI A  &hrm_L LALT R  &hrm_L LSHFT S  &hrm_L LCTRL T  &kp G                   &kp M    &hrm_R RCTRL N  &hrm_R RSHFT E  &hrm_R RALT I  &hrm_R RGUI O
+&lt 3 ESCAPE  &kp Z          &kp X          &kp C           &kp D           &kp V                   &kp K    &kp H           &kp COMMA       &kp DOT        &kp FSLH       &kp BSLH
+                                            &kp DEL         &lt 1 TAB       &mt LEFT_SHIFT SPACE    &kp RET  &lt 2 ESC       &kp BSPC
             >;
         };
 
