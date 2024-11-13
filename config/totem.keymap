@@ -54,6 +54,28 @@
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <16 17 19 18>;
         };
+
+        pht_L: pht_L {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHT_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 14 21 22 23 24 25 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 37 35 36 33 34 35 32>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+        };
+
+        pht_R: pht_R {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHT_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 26 27 28 29 30 0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 34 35 36 37>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+        };
     };
 
     keymap {
@@ -79,7 +101,7 @@
 
             bindings = <
               &kp Q          &kp W          &kp F           &kp P           &kp B                   &kp J    &kp L           &kp U           &kp Y          &kp SEMI
-              &hrm_L LGUI A  &hrm_L LALT R  &hrm_L LSHFT S  &hrm_L LCTRL T  &kp G                   &kp M    &hrm_R RCTRL N  &hrm_R RSHFT E  &hrm_R RALT I  &hrm_R RGUI O
+              &pht_L LGUI A  &pht_L LALT R  &pht_L LSHFT S  &pht_L LCTRL T  &kp G                   &kp M    &pht_R RCTRL N  &pht_R RSHFT E  &pht_R RALT I  &pht_R RGUI O
 &lt 3 ESCAPE  &kp Z          &kp X          &kp C           &kp D           &kp V                   &kp K    &kp H           &kp COMMA       &kp DOT        &kp FSLH       &kp BSLH
                                             &kp DEL         &lt 1 TAB       &mt LEFT_SHIFT SPACE    &kp RET  &lt 2 ESC       &kp BSPC
             >;
