@@ -100,10 +100,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q          &kp W          &kp F           &kp P           &kp B                   &kp J    &kp L           &kp U           &kp Y          &kp SEMI
-              &pht_L LGUI A  &pht_L LALT R  &pht_L LSHFT S  &pht_L LCTRL T  &kp G                   &kp M    &pht_R RCTRL N  &pht_R RSHFT E  &pht_R RALT I  &pht_R RGUI O
-&lt 8 ESCAPE  &kp Z          &kp X          &kp C           &kp D           &kp V                   &kp K    &kp H           &kp COMMA       &kp DOT        &kp FSLH       &kp BSLH
-                                            &kp DEL         &lt 2 TAB       &mt LEFT_SHIFT SPACE    &kp RET  &lt 3 ESC       &kp BSPC
+              &kp Q          &kp W          &kp F           &kp P           &kp B                   &kp J          &kp L           &kp U           &kp Y          &kp SEMI
+              &pht_L LGUI A  &pht_L LALT R  &pht_L LSHFT S  &pht_L LCTRL T  &kp G                   &kp M          &pht_R RCTRL N  &pht_R RSHFT E  &pht_R RALT I  &pht_R RGUI O
+&lt 8 ESCAPE  &kp Z          &kp X          &kp C           &kp D           &kp V                   &kp K          &kp H           &kp COMMA       &kp DOT        &kp FSLH       &kp BACKSPACE
+                                            &kp LEFT_ALT    &lt 2 TAB       &mt LEFT_SHIFT SPACE    &mt LCTRL RET  &lt 3 ESC       &kp LCMD
             >;
         };
 
@@ -134,10 +134,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp N1      &kp N2             &kp N3        &kp N4  &kp N5    &kp N6    &kp N7    &kp N8        &kp N9     &kp N0
-        &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &kp DEL     &trans             &trans        &trans  &trans    &trans    &trans    &trans        &trans     &trans  &trans
-                                       &trans        &trans  &trans    &trans    &trans    &trans
+        &kp N1      &kp N2             &kp N3        &kp N4  &kp N5    &kp N6    &kp N7         &kp N8        &kp N9     &kp N0
+        &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &kp DEL     &trans             &trans        &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans  &kp DELETE
+                                       &trans        &trans  &trans    &trans    &trans         &trans
             >;
         };
 
@@ -160,7 +160,7 @@
             bindings = <
         &trans    &trans       &trans    &trans      &trans         &kp UNDERSCORE  &kp MINUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE
         &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK
-&trans  &trans    &trans       &trans    &trans      &trans         &kp PLUS        &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH      &trans
+&trans  &trans    &trans       &trans    &trans      &trans         &kp PLUS        &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BSLH      &kp DELETE
                                &trans    &trans      &trans         &trans          &trans         &trans
             >;
         };
@@ -182,10 +182,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &bt BT_CLR   &out OUT_TOG  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &trans        &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &trans        &trans        &trans        &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                   &trans        &trans        &trans    &trans  &trans  &trans
+        &bt BT_CLR  &out OUT_TOG  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &trans      &trans        &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans      &trans        &trans        &trans        &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                  &trans        &trans        &trans    &trans  &trans  &trans
             >;
         };
 
