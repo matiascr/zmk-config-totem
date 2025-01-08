@@ -103,17 +103,17 @@
               &kp Q          &kp W          &kp F           &kp P           &kp B                   &kp J          &kp L           &kp U           &kp Y          &kp SEMI
               &pht_L LGUI A  &pht_L LALT R  &pht_L LSHFT S  &pht_L LCTRL T  &kp G                   &kp M          &pht_R RCTRL N  &pht_R RSHFT E  &pht_R RALT I  &pht_R RGUI O
 &lt 8 ESCAPE  &kp Z          &kp X          &kp C           &kp D           &kp V                   &kp K          &kp H           &kp COMMA       &kp DOT        &kp FSLH       &kp BACKSPACE
-                                            &kp LEFT_ALT    &lt 2 TAB       &mt LEFT_SHIFT SPACE    &mt LCTRL RET  &lt 3 ESC       &kp LCMD
+                                            &kp DELETE      &lt 2 TAB       &mt LEFT_SHIFT SPACE    &mt LCTRL RET  &lt 3 ESC       &kp BACKSPACE
             >;
         };
 
         qwerty_base {
             label = "QWERTY BASE";
             bindings = <
-              &kp Q          &kp W          &kp E           &kp R           &kp T                   &kp Y    &kp U           &kp I           &kp O          &kp P
-              &pht_L LGUI A  &pht_L LALT S  &pht_L LSHFT D  &pht_L LCTRL F  &kp G                   &kp H    &pht_R RCTRL J  &pht_R RSHFT K  &pht_R RALT L  &pht_R RGUI SEMICOLON
-&lt 8 ESCAPE  &kp Z          &kp X          &kp C           &kp V           &kp B                   &kp N    &kp M           &kp COMMA       &kp DOT        &kp FSLH               &kp BSLH
-                                            &kp DEL         &lt 2 TAB       &mt LEFT_SHIFT SPACE    &kp RET  &lt 3 ESC       &kp BSPC
+              &kp Q          &kp W          &kp E           &kp R           &kp T                   &kp Y            &kp U           &kp I           &kp O          &kp P
+              &pht_L LGUI A  &pht_L LALT S  &pht_L LSHFT D  &pht_L LCTRL F  &kp G                   &kp H            &pht_R RCTRL J  &pht_R RSHFT K  &pht_R RALT L  &pht_R RGUI SEMICOLON
+&lt 8 ESCAPE  &kp Z          &kp X          &kp C           &kp V           &kp B                   &kp N            &kp M           &kp COMMA       &kp DOT        &kp FSLH               &kp BSLH
+                                            &kp DEL         &lt 2 TAB       &mt LEFT_SHIFT SPACE    &mt LCTRL ENTER  &lt 3 ESC       &kp BSPC
             >;
         };
 
@@ -134,10 +134,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp N1      &kp N2             &kp N3        &kp N4  &kp N5    &kp N6    &kp N7         &kp N8        &kp N9     &kp N0
-        &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &kp DEL     &trans             &trans        &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans  &kp DELETE
-                                       &trans        &trans  &trans    &trans    &trans         &trans
+         &kp N1     &kp N2      &kp N3        &kp N4        &kp N5    &kp N6    &kp N7         &kp N8        &kp N9     &kp N0
+         &kp LMETA  &kp LALT    &kp LSHFT     &kp LCTRL     &trans    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&kp TAB  &kp DEL    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans    &kp HOME  &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans  &kp DELETE
+                                &trans        &trans        &trans    &trans    &trans         &trans
             >;
         };
 
