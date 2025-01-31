@@ -100,10 +100,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q          &kp W          &kp F           &kp P           &kp B                   &kp J          &kp L           &kp U           &kp Y          &kp SEMI
-              &pht_L LGUI A  &pht_L LALT R  &pht_L LSHFT S  &pht_L LCTRL T  &kp G                   &kp M          &pht_R RCTRL N  &pht_R RSHFT E  &pht_R RALT I  &pht_R RGUI O
-&lt 8 ESCAPE  &kp Z          &kp X          &kp C           &kp D           &kp V                   &kp K          &kp H           &kp COMMA       &kp DOT        &kp FSLH       &kp BACKSPACE
-                                            &kp DELETE      &lt 2 TAB       &mt LEFT_SHIFT SPACE    &mt LCTRL RET  &lt 3 ESC       &kp BACKSPACE
+              &kp Q  &kp W  &kp F          &kp P      &kp B              &kp J           &kp L      &kp U          &kp Y    &kp SEMI
+              &kp A  &kp R  &kp S          &kp T      &kp G              &kp M           &kp N      &kp E          &kp I    &kp O
+&lt 8 ESCAPE  &kp Z  &kp X  &kp C          &kp D      &kp V              &kp K           &kp H      &kp COMMA      &kp DOT  &kp FSLH  &kp LEFT_ALT
+                            &kp LEFT_META  &lt 2 TAB  &mt LCTRL SPACE    &mt LSHIFT RET  &lt 3 ESC  &kp BACKSPACE
             >;
         };
 
