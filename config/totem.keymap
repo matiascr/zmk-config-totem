@@ -110,10 +110,10 @@
         qwerty_base {
             label = "QWERTY BASE";
             bindings = <
-              &kp Q          &kp W          &kp E           &kp R           &kp T                   &kp Y            &kp U           &kp I           &kp O          &kp P
-              &pht_L LGUI A  &pht_L LALT S  &pht_L LSHFT D  &pht_L LCTRL F  &kp G                   &kp H            &pht_R RCTRL J  &pht_R RSHFT K  &pht_R RALT L  &pht_R RGUI SEMICOLON
-&lt 8 ESCAPE  &kp Z          &kp X          &kp C           &kp V           &kp B                   &kp N            &kp M           &kp COMMA       &kp DOT        &kp FSLH               &kp BSLH
-                                            &kp DEL         &lt 2 TAB       &mt LEFT_SHIFT SPACE    &mt LCTRL ENTER  &lt 3 ESC       &kp BSPC
+              &kp Q  &kp W  &kp E          &kp R      &kp T              &kp Y             &kp U      &kp I      &kp O    &kp P
+              &kp A  &kp S  &kp D          &kp F      &kp G              &kp H             &kp J      &kp K      &kp L    &kp SEMI
+&lt 8 ESCAPE  &kp Z  &kp X  &kp C          &kp V      &kp B              &kp N             &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LALT
+                            &kp LEFT_META  &lt 2 TAB  &mt LCTRL SPACE    &mt LSHIFT ENTER  &lt 3 ESC  &kp BSPC
             >;
         };
 
